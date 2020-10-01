@@ -8,6 +8,9 @@ win.configure(background=bg_color)
 
 
 def password_generator(len,pass_entry):
+   if int(len)<=7:
+        msg.showinfo('Info','Your password should be greater than 7 Characters')
+   else:                 
     try:
         len=int(len)
     except Exception:
